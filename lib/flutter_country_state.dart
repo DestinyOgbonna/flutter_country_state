@@ -84,6 +84,8 @@ class _ShowMyDialogState extends State<ShowMyDialog> {
             ),
           ),
         ),
+
+        SizedBox(height: 20),
         Expanded(
           child: ListView(
             children: [
