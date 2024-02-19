@@ -72,7 +72,7 @@ class _ShowMyDialogState extends State<ShowMyDialog> {
           child: Text("All countries".toUpperCase(),style: widget.countryHeaderStyle),
         ),
         Padding(
-          padding: EdgeInsets.only(left:8.0, right:8.0,top: 20),
+          padding: EdgeInsets.only(left:8.0, right:8.0,top: 10, bottom:10),
           child: TextField(
             style: widget.searchStyle,
             controller: searchController,
@@ -85,7 +85,7 @@ class _ShowMyDialogState extends State<ShowMyDialog> {
           ),
         ),
 
-        SizedBox(height: 20),
+       
         Expanded(
           child: ListView(
             children: [
