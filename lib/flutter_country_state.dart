@@ -83,7 +83,7 @@ class _ShowMyDialogState extends State<ShowMyDialog> {
               style: widget.countryHeaderStyle),
         ),
         Padding(
-          padding: EdgeInsets.only(left: 8.0, right: 8.0, top: 10, bottom: 10),
+          padding: EdgeInsets.only(left: 8.0, right: 8.0, bottom: 20),
           child: TextField(
             style: widget.searchStyle,
             controller: searchController,
@@ -94,7 +94,7 @@ class _ShowMyDialogState extends State<ShowMyDialog> {
                 ),
               ),
               hintText: "Search for a country...",
-              contentPadding: EdgeInsets.fromLTRB(5.0, 10.0, 5.0, 10.0),
+              contentPadding: const EdgeInsets.all(10),
               enabledBorder: UnderlineInputBorder(
                 borderRadius: BorderRadius.circular(8),
                 borderSide: const BorderSide(
