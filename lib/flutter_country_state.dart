@@ -77,10 +77,12 @@ class _ShowMyDialogState extends State<ShowMyDialog> {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Padding(
-          padding: const EdgeInsets.all(18.0),
-          child: Text("All countries".toUpperCase(),
-              style: widget.countryHeaderStyle),
+        Center(
+          child: Padding(
+            padding: const EdgeInsets.only(bottom: 10.0, top: 18.0),
+            child: Text("All countries".toUpperCase(),
+                style: widget.countryHeaderStyle),
+          ),
         ),
         Padding(
           padding: EdgeInsets.only(left: 8.0, right: 8.0, bottom: 20),
@@ -96,7 +98,6 @@ class _ShowMyDialogState extends State<ShowMyDialog> {
               hintText: "Search for a country...",
               contentPadding: const EdgeInsets.all(10),
               enabledBorder: UnderlineInputBorder(
-                borderRadius: BorderRadius.circular(8),
                 borderSide: const BorderSide(
                   color: Color(0xff8C8C8C),
                 ),
